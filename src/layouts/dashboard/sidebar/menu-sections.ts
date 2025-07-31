@@ -30,15 +30,15 @@ interface MenuItem {
 
 export const menu: MenuItem[] = [
   {
-    header: 'Overview',
+    header: 'Apps',
     section: [
       {
-        name: 'Welcome',
+        name: 'Home',
         href: paths.dashboard.home,
         icon: PiStarDuotone,
       },
       {
-        name: 'Documentation',
+        name: 'HexMask',
         href: paths.docs.root,
         icon: PiFilesDuotone,
       },
@@ -46,7 +46,7 @@ export const menu: MenuItem[] = [
   },
 
   {
-    header: 'Apps',
+    header: 'Settings',
     section: [
       {
         name: 'Kanban',
