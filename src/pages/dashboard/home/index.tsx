@@ -1,4 +1,4 @@
-import { Input, Loader, Stack, Select, Paper, Divider, Container, Title } from '@mantine/core';
+import { Input, Loader, Stack, Select, Paper, Divider, Container, Title, Button } from '@mantine/core';
 import { Page } from '@/components/page';
 import { useState } from 'react';
 
@@ -46,6 +46,7 @@ export default function TablesPage() {
             mb="xl"
           />
         </Paper>
+        <Button  variant="filled" color='green' size="md" fullWidth> Generate Documents </Button>
       </Stack>
     </Page>
   );
