@@ -15,9 +15,8 @@ export function TemplateTable() {
     tabsConfig: {
       tabs: [
         { value: 'all', label: 'All', counter: totalRecords },
-        { value: 'pending', label: 'Pending', color: 'orange', counter: 10 },
-        { value: 'cancelled', label: 'Cancelled', color: 'gray', disabled: true },
-        { value: 'deleted', label: 'Deleted', counter: 0, color: 'red' },
+        { value: 'available', label: 'Available', color: 'green', counter: 10 },
+        { value: 'archived', label: 'Archived', counter: 0, color: 'red' },
       ],
     },
   });
