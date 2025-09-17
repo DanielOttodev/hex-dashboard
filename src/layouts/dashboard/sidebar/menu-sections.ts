@@ -33,13 +33,13 @@ export const menu: MenuItem[] = [
     header: 'Apps',
     section: [
       {
-        name: 'Home',
+        name: 'Member View',
         href: paths.dashboard.home,
         icon: PiStarDuotone,
       },
       {
-        name: 'HexMask',
-        href: paths.docs.root,
+        name: 'Templates',
+        href: paths.dashboard.templates,
         icon: PiFilesDuotone,
       },
     ],

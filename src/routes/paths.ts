@@ -15,6 +15,7 @@ export const paths = {
 
   dashboard: {
     root: '/dashboard',
+    templates: '/dashboard/templates',
     home: '/dashboard/home',
     management: {
       root: '/dashboard/management',

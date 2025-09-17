@@ -12,11 +12,12 @@ interface AuthGuardProps {
 export function AuthGuard({ children }: AuthGuardProps) {
   const { pathname } = useLocation();
   const { isAuthenticated, isInitialized } = useAuth();
+  console.log(isAuthenticated);
 
   if (!isInitialized) {
     return <LoadingScreen />;
   }
-
+ 
   if (!isAuthenticated) {
     return (
       <Navigate to={`${paths.auth.login}?${app.redirectQueryParamName}=${pathname}`} replace />

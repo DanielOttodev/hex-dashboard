@@ -18,7 +18,6 @@ export function Header() {
         <Link to="/" className={classes.logo}>
           <Logo />
         </Link>
-        <SpotlightSearchBarButton placeholder="Search for feature" spotlight={<SearchMenu />} />
       </div>
 
       <Group>

@@ -73,6 +73,10 @@ const router = createBrowserRouter([
         path: paths.dashboard.home,
         element: LazyPage(() => import('@/pages/dashboard/home')),
       },
+      {
+        path: paths.dashboard.templates,
+        element: LazyPage(() => import('@/pages/dashboard/templates')),
+      },
       /* ---------------------------------- APPS ---------------------------------- */
       {
         path: paths.dashboard.apps.root,
