@@ -94,7 +94,9 @@ function handleRequestError(error: unknown) {
   }
 
   if (error instanceof ZodError) {
+    console.log('Zod validation error:');
     console.error(error.format());
+
   }
 
   console.log(error);

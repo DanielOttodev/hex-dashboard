@@ -1,7 +1,7 @@
 export const app = {
-  name: 'Mantine Dashboard',
-  apiBaseUrl: 'https://api.example.com',
-  fakeBackend: true,
+  name: 'Hex Dashboard',
+  apiBaseUrl: 'https://localhost:7282/api',
+  fakeBackend: false,
   redirectQueryParamName: 'r',
   accessTokenStoreKey: 'access_token',
 };

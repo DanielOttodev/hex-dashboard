@@ -4,3 +4,4 @@ export * from './customers';
 export * from './notifications';
 export * from './users';
 export * from './documentTemplates';
+export * from './client';
