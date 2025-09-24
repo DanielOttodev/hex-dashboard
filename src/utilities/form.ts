@@ -2,7 +2,10 @@ import { UseFormReturnType } from '@mantine/form';
 import { notifications } from '@mantine/notifications';
 
 export function handleFormErrors(form: UseFormReturnType<any>, errors: unknown) {
+  console.log('Form errors:', errors);
   if (!errors || typeof errors !== 'object') {
+        notifications.show({ message: 'An unexpected error occurred. Please contact system administrator.', color: 'red' });
+
     return;
   }
 
@@ -10,6 +13,7 @@ export function handleFormErrors(form: UseFormReturnType<any>, errors: unknown) 
     errors.formErrors.forEach((error) => {
       notifications.show({ message: error, color: 'red' });
     });
+
   }
 
   if ('fieldErrors' in errors && typeof errors.fieldErrors === 'object' && errors.fieldErrors) {

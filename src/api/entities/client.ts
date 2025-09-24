@@ -6,7 +6,7 @@ export const Client = z.object({
   id: z.string().cuid2(),
   name: z.string().min(1),
   accounts: z.array(z.object({
-    id: z.string().cuid2(),
+    id: z.string(),
     name: z.string().min(1),
   })).optional(),
 });

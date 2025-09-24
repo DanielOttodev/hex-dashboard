@@ -30,12 +30,12 @@ interface MenuItem {
 
 export const menu: MenuItem[] = [
   {
-    header: 'Apps',
+    header: 'Documents',
     section: [
       {
         name: 'Member View',
         href: paths.dashboard.home,
-        icon: PiStarDuotone,
+        icon: PiUsersDuotone,
       },
       {
         name: 'Templates',
@@ -45,19 +45,10 @@ export const menu: MenuItem[] = [
     ],
   },
 
-  {
-    header: 'Settings',
-    section: [
-      {
-        name: 'Kanban',
-        href: paths.dashboard.apps.kanban,
-        icon: PiKanbanDuotone,
-      },
-    ],
-  },
+
 
   {
-    header: 'Management',
+    header: 'Admin',
     section: [
       {
         name: 'Customers',
@@ -93,7 +84,7 @@ export const menu: MenuItem[] = [
       },
     ],
   },
-
+/*
   {
     header: 'Authentication',
     section: [
@@ -119,4 +110,5 @@ export const menu: MenuItem[] = [
       },
     ],
   },
+  */
 ];
